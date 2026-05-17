@@ -4,3 +4,7 @@ keybind = global:cmd+shift+t=toggle_quick_terminal
 
 # Left Option = Alt (tmux/vim/readline binds). Right Option = compose chars.
 macos-option-as-alt = left
+
+# Translucent blurred background (macOS)
+background-opacity = 0.85
+background-blur-radius = 20
