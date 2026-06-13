@@ -28,8 +28,8 @@ outer.right = 8
 # Mods: cmd, alt, ctrl, shift. Chords with '-'.
 [mode.main.binding]
 
-# Fullscreen toggle (the cmd-f you wanted)
-cmd-f = 'fullscreen'
+# Fullscreen toggle
+alt-f = 'fullscreen'
 
 # Layout toggles
 alt-slash = 'layout tiles horizontal vertical'
