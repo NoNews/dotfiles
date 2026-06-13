@@ -1,0 +1,90 @@
+# AeroSpace config — https://nikitabobko.github.io/AeroSpace/guide
+# Reload after edits: aerospace reload-config (or alt-shift-c)
+
+# Run at login (AeroSpace manages this; keep false if you use a LaunchAgent)
+start-at-login = true
+
+# Normalizations: keep the tree tidy
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+
+# Default tiling orientation for new containers
+default-root-container-layout = 'tiles'
+default-root-container-orientation = 'auto'
+
+# Mouse follows focus / focus follows window movement
+on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+
+# Gaps (px)
+[gaps]
+inner.horizontal = 8
+inner.vertical = 8
+outer.left = 8
+outer.bottom = 8
+outer.top = 8
+outer.right = 8
+
+# Main mode — keybinds active by default.
+# Mods: cmd, alt, ctrl, shift. Chords with '-'.
+[mode.main.binding]
+
+# Fullscreen toggle (the cmd-f you wanted)
+cmd-f = 'fullscreen'
+
+# Layout toggles
+alt-slash = 'layout tiles horizontal vertical'
+alt-comma = 'layout accordion horizontal vertical'
+
+# Focus panes — vim hjkl
+alt-h = 'focus left'
+alt-j = 'focus down'
+alt-k = 'focus up'
+alt-l = 'focus right'
+
+# Move windows — vim hjkl
+alt-shift-h = 'move left'
+alt-shift-j = 'move down'
+alt-shift-k = 'move up'
+alt-shift-l = 'move right'
+
+# Resize
+alt-minus = 'resize smart -50'
+alt-equal = 'resize smart +50'
+
+# Workspaces 1-9
+alt-1 = 'workspace 1'
+alt-2 = 'workspace 2'
+alt-3 = 'workspace 3'
+alt-4 = 'workspace 4'
+alt-5 = 'workspace 5'
+alt-6 = 'workspace 6'
+alt-7 = 'workspace 7'
+alt-8 = 'workspace 8'
+alt-9 = 'workspace 9'
+
+# Move focused window to workspace
+alt-shift-1 = 'move-node-to-workspace 1'
+alt-shift-2 = 'move-node-to-workspace 2'
+alt-shift-3 = 'move-node-to-workspace 3'
+alt-shift-4 = 'move-node-to-workspace 4'
+alt-shift-5 = 'move-node-to-workspace 5'
+alt-shift-6 = 'move-node-to-workspace 6'
+alt-shift-7 = 'move-node-to-workspace 7'
+alt-shift-8 = 'move-node-to-workspace 8'
+alt-shift-9 = 'move-node-to-workspace 9'
+
+# Quick toggle between last two workspaces
+alt-tab = 'workspace-back-and-forth'
+
+# Reload config
+alt-shift-c = 'reload-config'
+
+# Enter service mode for less-common ops
+alt-shift-semicolon = 'mode service'
+
+# Service mode — one-off operations, esc back to main
+[mode.service.binding]
+esc = ['reload-config', 'mode main']
+r = ['flatten-workspace-tree', 'mode main']   # reset layout
+f = ['layout floating tiling', 'mode main']   # toggle floating
+backspace = ['close-all-windows-but-current', 'mode main']
