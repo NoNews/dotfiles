@@ -1,5 +1,7 @@
 # ghostty config
 
+theme = Catppuccin Mocha
+
 keybind = global:cmd+shift+t=toggle_quick_terminal
 
 # Left Option = Alt (tmux/vim/readline binds). Right Option = compose chars.
