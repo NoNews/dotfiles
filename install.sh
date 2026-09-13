@@ -24,6 +24,7 @@ echo "Linking dotfiles..."
 link "$DOTFILES/tmux/tmux.conf"  ~/.tmux.conf
 link "$DOTFILES/ghostty/config"  ~/.config/ghostty/config
 link "$DOTFILES/aerospace/aerospace.toml"  ~/.config/aerospace/aerospace.toml
+link "$DOTFILES/herdr/config.toml"  ~/.config/herdr/config.toml
 
 echo "Injecting sources..."
 inject "source \"$DOTFILES/bash/functions.sh\""  ~/.bash_profile

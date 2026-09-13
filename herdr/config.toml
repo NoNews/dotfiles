@@ -1,0 +1,6 @@
+onboarding = false
+
+[keys]
+# tmux-matching splits: prefix % = side-by-side, prefix , = stacked
+split_vertical = "prefix+%"
+split_horizontal = "prefix+comma"
