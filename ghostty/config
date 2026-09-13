@@ -7,15 +7,7 @@ keybind = global:cmd+shift+t=toggle_quick_terminal
 # Left Option = Alt (tmux/vim/readline binds). Right Option = compose chars.
 macos-option-as-alt = left
 
-# Opaque: matches tmux status-bar hex (#1e1e2e, hardcoded in tmux.conf)
-# exactly, edge-to-edge. Translucency/blur can never pixel-match a static
-# tmux color — the blend shifts with whatever's behind the window — so
-# traded off for a seamless tmux bar.
-background-opacity = 1
-background-blur-radius = 0
+background-opacity = 0.85
+background-blur-radius = 20
 
-# Native macOS title bar uses system vibrancy-gray, not the theme bg — a
-# second seam above the tmux bar, unrelated to opacity/blur. "hidden" drops
-# the bar (traffic lights float over content instead), so terminal content
-# runs edge-to-edge to the window's top.
-macos-titlebar-style = "hidden"
+window-decoration = true
