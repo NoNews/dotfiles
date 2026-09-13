@@ -6,3 +6,8 @@ split_vertical = "prefix+%"
 split_horizontal = "prefix+/"
 # tmux-matching: prefix , = rename tab (rename-window in tmux)
 rename_tab = "prefix+comma"
+
+# Browser-style tab switching (no prefix needed). Requires Ghostty's own
+# super+shift+[ / ] tab-switch defaults to be unbound, see ghostty/config.
+next_tab = "cmd+shift+]"
+previous_tab = "cmd+shift+["

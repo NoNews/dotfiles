@@ -4,6 +4,11 @@ theme = Catppuccin Mocha
 
 keybind = global:cmd+shift+t=toggle_quick_terminal
 
+# Pass these through to herdr for browser-style tab switching instead of
+# Ghostty's own default tab-switch action.
+keybind = super+shift+[=unbind
+keybind = super+shift+]=unbind
+
 # Left Option = Alt (tmux/vim/readline binds). Right Option = compose chars.
 macos-option-as-alt = left
 
