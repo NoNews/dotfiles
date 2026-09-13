@@ -1,6 +1,8 @@
 onboarding = false
 
 [keys]
-# tmux-matching splits: prefix % = side-by-side, prefix , = stacked
+# tmux-matching splits: prefix % = side-by-side, prefix / = stacked
 split_vertical = "prefix+%"
-split_horizontal = "prefix+comma"
+split_horizontal = "prefix+/"
+# tmux-matching: prefix , = rename tab (rename-window in tmux)
+rename_tab = "prefix+comma"
